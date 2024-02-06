@@ -14,9 +14,16 @@
 
 <body>
 
+  <div class="subscribe-pop-up">
+    <img src="images/check.svg" width="32" height="32" alt="Ícone de ok">
+    <span>Inscrição Feita!</span>
+  </div>
+
   <header class="header-container">
     <h1 class="header-logo">
-      <img src="images/logo.svg" width="60" height="60" alt="Logo da Epic Battler Arena">
+      <a href="#">
+        <img src="images/logo.svg" width="60" height="60" alt="Logo da Epic Battler Arena">
+      </a>
       Epic Battle Arena
     </h1>
 
@@ -38,7 +45,7 @@
         </ul>
       </nav>
 
-      <button class="button-subscribe">Inscrever-se</button>
+      <a class="button-subscribe" href="#form">Inscrever-se</a>
     </div>
   </header>
 
@@ -50,7 +57,7 @@
           Prepare-se para o maior campeonato de jogos eletrônicos do ano, com três dias de muita disputa e emoção
         </p>
       </div>
-      <button class="banner-button-subscribe">Inscrever-se</button>
+      <a class="banner-button-subscribe" href="#form">Inscrever-se</a>
     </section>
 
     <section class="about-container">
@@ -127,27 +134,27 @@
       </article>
     </section>
 
-    <section class="call-container">
+    <section class="call-container" id="form">
       <h3 class="call-title">Inscreva-se</h3>
       <div class="call-subcontainer">
         <form class="form-container">
           <div class="form-subcontainer">
             <div class="form-group">
               <label class="form-label" for="name">Nome</label>
-              <input class="form-input" type="text" name="name" id="name">
+              <input required class="form-input" type="text" name="name" id="name">
             </div>
             <div class="form-group">
               <label class="form-label" for="email">E-mail</label>
-              <input class="form-input" type="email" name="email" id="email">
+              <input required class="form-input" type="email" name="email" id="email">
             </div>
             <div class="form-group">
               <label class="form-label" for="password">Senha</label>
-              <input class="form-input" type="password" name="password" id="password">
+              <input required class="form-input" type="password" name="password" id="password">
             </div>
             <div class="form-group">
               <label class="form-label" for="game">Opção de Jogo</label>
-              <select class="form-select" name="game" id="game">
-                <option value="-" selected>-</option>
+              <select required class="form-select" name="game" id="game">
+                <option value="" selected>-</option>
                 <option value="Overwatch">Overwatch</option>
                 <option value="PUBG">PUBG</option>
                 <option value="Fortnite">Fortnite</option>
@@ -176,7 +183,9 @@
   <footer class="footer-container">
     <div class="footer-subcontainer">
       <h2 class="footer-section-title">
-        <img src="images/logo.svg" width="60" height="60" alt="Ícone da Epic Battle Arena">
+        <a href="#">
+          <img src="images/logo.svg" width="60" height="60" alt="Ícone da Epic Battle Arena">
+        </a>
         Epic Battle Arena
       </h2>
     </div>
