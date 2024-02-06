@@ -1,3 +1,4 @@
+// form & pop-up
 const form = document.querySelector(".form-container")
 
 form.addEventListener("submit", (e) => submitForm(e))
@@ -18,4 +19,24 @@ function submitForm(e) {
   }, 5000)
 
   form.reset()
+}
+
+// aside mobile
+const openButton = document.querySelector(".menu-button")
+const closeButton = document.querySelector(".close-button")
+const aside = document.querySelector(".aside-container")
+const background = document.querySelector(".background")
+
+openButton.addEventListener("click", open)
+closeButton.addEventListener("click", close)
+background.addEventListener("click", close)
+
+function open() {
+  background.classList.add("show")
+  aside.classList.add("open")
+}
+
+function close() {
+  background.classList.remove("show")
+  aside.classList.remove("open")
 }
