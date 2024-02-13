@@ -485,12 +485,18 @@ img:hover {
   .call-subcontainer {
     flex-direction: column-reverse;
   }
-}
 
-@media screen and (max-width: 768px) {
+  .about-container,
   .details-subcontainer {
     flex-direction: column !important;
   }
+
+  .details-info {
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 768px) {
 
   .details-info,
   .details-image,
